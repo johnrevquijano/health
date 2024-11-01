@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthBuddy</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 style="font-family: 'Dancing Script', cursive;">HealthBuddy: AI-Powered Health Monitoring</h1>
+        
+        <div id="action-buttons">
+            <button id="add-record" onclick="showForm()">Add Health Record</button>
+            <button id="view-history" onclick="toggleHistory()">View Health History</button>
+            <button id="exit" onclick="exitApp()">Exit</button>
+        </div>
+
+        <form id="health-form" style="display: none;">
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="heartRate">Heart Rate (bpm):</label>
+                <input type="number" id="heartRate" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <div class="form-actions">
+                <button type="submit">Submit</button>
+                <button type="button" onclick="hideForm()">Cancel</button>
+            </div>
+        </form>
+
+        <div id="message"></div>
+        <div id="bmi-message"></div>
+
+        <div id="history" class="history" style="display: none;">
+            <h2 style="font-family: 'Dancing Script', cursive;">Health History:</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Age</th>
+                        <th>Weight (kg)</th>
+                        <th>Height (cm)</th>
+                        <th>Heart Rate (bpm)</th>
+                        <th>Gender</th>
+                        <th>BMI</th>
+                        <th>Estimated Body Fat (%)</th>
+                        <th>Classification</th> <!-- New column -->
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="history-list"></tbody>
+            </table>
+        </div>
+
+        <div id="home" style="display: none;">
+            <h1 style="font-family: 'Poppins', sans-serif;">Welcome to HealthBuddy!</h1>
+            <p>This is the home page.</p>
+            <button onclick="goHome()">Go to Health Monitoring</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

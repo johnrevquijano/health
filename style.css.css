@@ -1,0 +1,120 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #d0e3ff; /* Light green background */
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    background: #b7d0e1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 5 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Poppins', cursive; /* Luxurious cursive */
+    color: #5784a2; /* Darker green for headings */
+}
+
+button {
+    margin: 25px 15px;
+    padding: 20px;
+    background-color: #cc7722; /* Green button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #ce8180; /* Darker green on hover */
+    transform: scale(1.05);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align items */
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align group */
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-family: 'Times New Roman', serif; /* Change font */
+    font-size: 1.2em; /* Increase label font size */
+}
+
+input, select {
+    padding: 12px; /* Increase padding for better appearance */
+    border: 1px solid #3d3b3b;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 400px; /* Increase max width for inputs */
+    text-align: left;
+    font-family: 'Times New Roman', serif; /* Change font */
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.history {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #979792;
+    text-align: left;
+    font-family: 'Times New Roman', serif; /* Change font */
+}
+
+th {
+    background-color: #ffe584;
+}
+
+.actions {
+    display: flex;
+    gap: 5px; /* Space between buttons */
+}
+
+#message {
+    color: #5f84a2;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Existing styles ... */
+
+table, th, td {
+    font-family: 'Times New Roman', Times, serif; /* Set table font to Times New Roman */
+}
+
+input, select {
+    font-family: 'Times New Roman', Times, serif; /* Set input/select font to Times New Roman */
+}
+
+/* Additional styles as needed ... */
